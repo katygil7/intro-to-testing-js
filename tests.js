@@ -27,10 +27,18 @@ describe('sayHello', function() {
         expect(typeof sayHello).toBe('function');
     });
     it('should return a string when called', function () {
-        expect(typeof sayHello()).toBe("string")
-
+        expect(typeof sayHello("")).toBe("string")
     });
+    it('should return Hello, Jane!', function () {
+        expect(sayHello("Jane")).toBe("Hello, Jane!")
+    });
+    it('should return Hello, Alex!', function () {
+        expect(sayHello("Alex")).toBe("Hello, Alex!")
+    });
+    it('should return Hello, Pad!', function () {
+        expect(sayHello("Pad")).toBe("Hello, Pad!")
+    });
+
 });
     
 
-//  function gives us a string.  add an assertion to sayHello that it "should return a string when called."  expect(typeof sayHello()).toBe("string")

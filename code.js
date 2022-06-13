@@ -7,6 +7,22 @@ function foo(){
     return 2;
 }
 
-const sayHello = function() {
-    return "";
+function sayHello(input){
+    if ( input === "Alex"){
+        return "Hello, Alex!";
+    }else if ( input === "Pad"){
+        return "Hello, Pad!"
+    }else {
+        return "Hello, Jane!";
+    }
 }
+
+function sayHello(input){
+    return "Hello, " + input + "!";
+}
+
+
+//function sayHello(input){
+    //return `Hello, ${input}!`;
+
+

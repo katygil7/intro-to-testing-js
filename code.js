@@ -8,21 +8,32 @@ function foo(){
 }
 
 function sayHello(input){
-    if ( input === "Alex"){
-        return "Hello, Alex!";
+    if ( input === true){
+        return "Hello, World!";
     }else if ( input === "Pad"){
-        return "Hello, Pad!"
-    }else {
+        return "Hello, Pad!";
+    }else if(  input === "Jane"){
         return "Hello, Jane!";
+    }else{
+        return "Hello, World!";
     }
 }
 
 function sayHello(input){
-    return "Hello, " + input + "!";
-}
+    if(input === true){
+        return "Hello, World!";
+    }else if( input === false){
+        return "Hello, World!";
+    }else{
+        return "Hello, " + input + "!";
+    }
+    }
 
 
-//function sayHello(input){
+
+
+
+    //function sayHello(input){
     //return `Hello, ${input}!`;
 
 
